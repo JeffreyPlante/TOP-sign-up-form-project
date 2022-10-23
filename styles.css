@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+@font-face {
+    font-family: 'aaargh';
+    src: url('./assets/fonts/Aaargh/Aaargh.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+  --white: #CBDADC;
+}
+
+body {
+  color: var(--white);
+}
+
+.w-t {
+  color: #CBDADC;
+}
+.verdana {
+  font-family: verdana, arial;
+}
+
+.container {
+  display: flex;
+}
+
+.background-image {
+  background-image: url(./assets/img/todd-trapani-vS54KomBEJU-unsplash.jpeg);
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 35%;
+  height: 100vh;
+}
+
+.form-area {
+  display:inline-block;
+  background-color: #0c1618;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  top: 300px;
+  opacity: 0.5;
+}
+
+.logo {
+  display:inline-block;
+  margin-right: 10px;
+  height: 75%;
+  max-width: auto;
+}
+
+.slogan {
+  font-family: 'aaargh', serif;
+  display:inline-block;
+  font-size: 45px;
+}
+
+.paragraph, .tag {
+  font-size: 26px;
+  color: var(--white);
+  margin: 20px 40px 20px 40px;
+}
+
+.tag {
+  margin-bottom: 60px;
+}
+.signup-form {
+  padding: 20px 40px 30px 40px;
+  background-color:  #1c3a32;
+}
+
+.signup-form div label {
+  color: #CBDADC;
+  font-family: roboto, arial;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 2px;
+}
+
+input {
+  border: 3px solid #0c1618;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+input:focus {
+  border: 3px solid green; 
+}
+
+.widgets div input:invalid {
+  background-color: #e38939;
+}
+
+.widgets div input:valid {
+  border-color: #0c1618;
+  background-color: var(--white);  
+}
+
+.form-card-title {
+  margin-bottom: 20px;   
+  font-size: 22px;
+}
+.widgets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 20px;
+  width: 80%
+}
+
+.widgets div {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  font-size: 16px;
+  margin: 20px 40px 20px 40px;
+  padding: 12px 28px;
+  background-color: #0086A5;
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 26px;
+}
+
+.returning {
+  font-size: 18px;
+  margin-left: 40px;
+}
