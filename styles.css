@@ -145,23 +145,33 @@ input {
   font-size: 18px;
 }
 
-input:focus {
+.widgets div input:focus {
   border: 3px solid green; 
 }
 
-.widgets div input:invalid {
+.error {
   background-color: #e38939;
 }
 
-.widgets div input:valid {
-  border-color: #0c1618;
-  background-color: var(--white);  
+.pass-error-message{
+  font-family: roboto;
+  letter-spacing: 1px;
+  color: red;
+  margin-left: 40px;
+  position: absolute;
+  bottom: 242px;
+  display: none;
+}
+
+.show-error {
+  display: block;
 }
 
 .form-card-title {
   margin-bottom: 20px;   
   font-size: 22px;
 }
+
 .widgets {
   display: grid;
   grid-template-columns: 1fr 1fr;
